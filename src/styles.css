@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+	@apply m-0;
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family:
+		source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* === Tema Claro === */
+:root {
+	--background: #fefefe;
+	--foreground: #1c243b;
+
+	--primary: #1c243b;
+	--primary-foreground: #fefefe;
+
+	--secondary: #ed7236;
+	--secondary-foreground: #fefefe;
+
+	--accent: #f8bf35;
+	--accent-foreground: #1c243b;
+
+	--danger: #971323;
+	--danger-foreground: #fefefe;
+
+	--border: #e3e6ee;
+	--input: #e3e6ee;
+	--ring: #f8bf35;
+
+	--radius: 0.625rem;
+}
+
+/* === Tema Escuro === */
+.dark {
+	--background: #0f1424;
+	--foreground: #fefefe;
+
+	--primary: #f8bf35;
+	--primary-foreground: #1c243b;
+
+	--secondary: #ed7236;
+	--secondary-foreground: #fefefe;
+
+	--accent: #971323;
+	--accent-foreground: #fefefe;
+
+	--danger: #971323;
+	--danger-foreground: #fefefe;
+
+	--border: #2b324a;
+	--input: #2b324a;
+	--ring: #f8bf35;
+
+	--radius: 0.625rem;
+}
+
+/* === Mapeamento Tailwind === */
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-danger: var(--danger);
+	--color-danger-foreground: var(--danger-foreground);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+}
+
+/* === Base Tailwind === */
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+}
