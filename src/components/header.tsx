@@ -126,7 +126,7 @@ export function Header(): React.JSX.Element {
 			<nav
 				className="fixed md:hidden bottom-0 left-0 w-full h-14 flex justify-between items-center
                 px-6 z-50
-                border-t border-white/20 dark:border-gray-700/40"
+                border-t border-t/20"
 			>
 				<Link to="/" className="min-h-10 min-w-10 w-10 h-10">
 					<img src="/logo512.png" alt="Logo do Bar dos Amigos" />
@@ -191,6 +191,8 @@ export function Header(): React.JSX.Element {
 										Parceiros
 									</a>
 								</Button>
+
+								<ThemeSwitcher label="Trocar tema" />
 
 								<div className="text-sm flex flex-wrap items-center justify-center gap-2 w-full">
 									<Button asChild variant="ghost">

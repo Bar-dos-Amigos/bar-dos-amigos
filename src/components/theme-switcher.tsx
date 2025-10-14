@@ -2,7 +2,13 @@ import { SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 
-export function ThemeSwitcher() {
+export function ThemeSwitcher({
+	withIcon = true,
+	label,
+}: {
+	withIcon?: boolean;
+	label?: string;
+}) {
 	const [theme, setTheme] = useState<"light" | "dark">("light");
 
 	useEffect(() => {
@@ -28,7 +34,8 @@ export function ThemeSwitcher() {
 
 	return (
 		<Button onClick={toggleTheme} variant="ghost" title="Trocar tema">
-			<SunMoon size={20} />
+			{withIcon && <SunMoon size={20} />}
+			{label}
 		</Button>
 	);
 }
