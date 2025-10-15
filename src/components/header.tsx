@@ -1,9 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Folder, Handshake, Home, Instagram, Menu, Twitch } from "lucide-react";
+import { Folder, Handshake, Home, Menu } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
-import { TbBrandDiscord } from "react-icons/tb";
 // import { ThemeSwitcher } from "./theme-switcher";
+import { SOCIAL_LINKS } from "@/config/constants";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
@@ -71,14 +71,14 @@ export function Header(): React.JSX.Element {
 						<Separator orientation="vertical" className="h-6 w-px" />
 
 						<a
-							href="https://www.instagram.com/bar_dos_amigos_online"
+							href={SOCIAL_LINKS.instagram.href}
 							target="_blank"
 							rel="noreferrer"
 						>
 							<SocialCard
-								icon={<Instagram size={20} />}
+								icon={<SOCIAL_LINKS.instagram.icon size={20} />}
 								title="@bar_dos_amigos_online"
-								url="https://www.instagram.com/bar_dos_amigos_online"
+								url={SOCIAL_LINKS.instagram.href}
 								avatar="/logo512.png"
 								description="🍻 Bem-vindo ao Bar dos Amigos!
 							RPG, eventos, games e zoeira com a galera geek.
@@ -87,14 +87,14 @@ export function Header(): React.JSX.Element {
 						</a>
 
 						<a
-							href="https://www.twitch.tv/kauso1"
+							href={SOCIAL_LINKS.stream.href}
 							target="_blank"
 							rel="noreferrer"
 						>
 							<SocialCard
-								icon={<Twitch size={20} />}
+								icon={<SOCIAL_LINKS.stream.icon size={20} />}
 								title="@kauso1"
-								url="https://www.twitch.tv/kauso1"
+								url={SOCIAL_LINKS.stream.href}
 								avatar="/logo512.png"
 								description="🍻 Bar dos Amigos — onde a live vira rolê!
 							Games, animes, RPG e muita resenha com a comunidade 💬"
@@ -102,14 +102,14 @@ export function Header(): React.JSX.Element {
 						</a>
 
 						<a
-							href="https://discord.gg/SMd83h5pxJ"
+							href={SOCIAL_LINKS.discord.href}
 							target="_blank"
 							rel="noreferrer"
 						>
 							<SocialCard
-								icon={<TbBrandDiscord size={20} />}
+								icon={<SOCIAL_LINKS.discord.icon size={20} />}
 								title="@Bar dos amigos"
-								url="https://discord.gg/SMd83h5pxJ"
+								url={SOCIAL_LINKS.discord.href}
 								avatar="/logo512.png"
 								description="🍻 Bem-vindo ao Bar dos Amigos!
 							RPG, eventos, games e zoeira com a galera geek.
@@ -197,29 +197,29 @@ export function Header(): React.JSX.Element {
 								<div className="text-sm flex flex-wrap items-center justify-center gap-2 w-full">
 									<Button asChild variant="ghost">
 										<a
-											href="https://www.twitch.tv/kauso1"
+											href={SOCIAL_LINKS.stream.href}
 											target="_blank"
 											rel="noreferrer"
 										>
-											<Twitch size={20} />
+											<SOCIAL_LINKS.stream.icon size={20} />
 										</a>
 									</Button>
 									<Button asChild variant="ghost">
 										<a
-											href="https://www.instagram.com/bar_dos_amigos_online"
+											href={SOCIAL_LINKS.instagram.href}
 											target="_blank"
 											rel="noreferrer"
 										>
-											<Instagram size={20} />
+											<SOCIAL_LINKS.instagram.icon size={20} />
 										</a>
 									</Button>
 									<Button asChild variant="ghost">
 										<a
-											href="https://discord.gg/SMd83h5pxJ"
+											href={SOCIAL_LINKS.discord.href}
 											target="_blank"
 											rel="noreferrer"
 										>
-											<TbBrandDiscord size={20} />
+											<SOCIAL_LINKS.discord.icon size={20} />
 										</a>
 									</Button>
 								</div>

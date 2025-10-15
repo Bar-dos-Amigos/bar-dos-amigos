@@ -1,3 +1,9 @@
+import { Gamepad as GamepadLottie } from "@/components/lottie/gamepad";
+import { Trophy as TrophyLottie } from "@/components/lottie/trophy";
+import { Users as UsersLottie } from "@/components/lottie/users";
+import { AnimatedSection } from "@/components/section";
+import { Button } from "@/components/ui/button";
+import { SOCIAL_LINKS } from "@/config/constants";
 import {
 	BookOpen,
 	ChevronRight,
@@ -8,11 +14,6 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
-import { Gamepad as GamepadLottie } from "@/components/lottie/gamepad";
-import { Trophy as TrophyLottie } from "@/components/lottie/trophy";
-import { Users as UsersLottie } from "@/components/lottie/users";
-import { AnimatedSection } from "@/components/section";
-import { Button } from "@/components/ui/button";
 
 export function AboutSection(): React.JSX.Element {
 	const items = [
@@ -370,7 +371,7 @@ export function AboutSection(): React.JSX.Element {
 
 			<Button asChild>
 				<a
-					href="https://discord.gg/SMd83h5pxJ"
+					href={SOCIAL_LINKS.discord.href}
 					target="_blank"
 					rel="noreferrer"
 					className="flex items-center justify-center gap-2 relative z-10"
