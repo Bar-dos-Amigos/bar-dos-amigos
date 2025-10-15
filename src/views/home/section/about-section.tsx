@@ -77,23 +77,23 @@ export function AboutSection(): React.JSX.Element {
 				y: 20,
 				duration: 4,
 				delay: 0,
-				opacity: 0.2,
+				opacity: 0.25,
 			},
 			{
 				element: <Cpu size={28} />,
 				x: 50,
 				y: 10,
 				duration: 3.5,
-				delay: 1,
-				opacity: 0.25,
+				delay: 0.8,
+				opacity: 0.2,
 			},
 			{
 				element: <BookOpen size={36} />,
 				x: 80,
 				y: 50,
 				duration: 5,
-				delay: 2,
-				opacity: 0.15,
+				delay: 1.2,
+				opacity: 0.18,
 			},
 			{
 				element: <Dice1 size={24} />,
@@ -175,6 +175,137 @@ export function AboutSection(): React.JSX.Element {
 				y: 50,
 				duration: 4.2,
 				delay: 0.6,
+				opacity: 0.22,
+			},
+
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 6, height: 6 }}
+					/>
+				),
+				x: 5,
+				y: 10,
+				duration: 3.3,
+				delay: 0.3,
+				opacity: 0.2,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 7, height: 7 }}
+					/>
+				),
+				x: 90,
+				y: 15,
+				duration: 4.1,
+				delay: 0.9,
+				opacity: 0.15,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 8, height: 8 }}
+					/>
+				),
+				x: 85,
+				y: 80,
+				duration: 4.5,
+				delay: 1.2,
+				opacity: 0.22,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 10, height: 10 }}
+					/>
+				),
+				x: 10,
+				y: 85,
+				duration: 3.9,
+				delay: 0.4,
+				opacity: 0.2,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 9, height: 9 }}
+					/>
+				),
+				x: 45,
+				y: 85,
+				duration: 4.2,
+				delay: 1.1,
+				opacity: 0.25,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 8, height: 8 }}
+					/>
+				),
+				x: 30,
+				y: 10,
+				duration: 3.6,
+				delay: 0.7,
+				opacity: 0.18,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 10, height: 10 }}
+					/>
+				),
+				x: 55,
+				y: 75,
+				duration: 4.3,
+				delay: 0.9,
+				opacity: 0.22,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 12, height: 12 }}
+					/>
+				),
+				x: 68,
+				y: 60,
+				duration: 3.7,
+				delay: 1.4,
+				opacity: 0.25,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 7, height: 7 }}
+					/>
+				),
+				x: 35,
+				y: 35,
+				duration: 3.4,
+				delay: 0.5,
+				opacity: 0.2,
+			},
+			{
+				element: (
+					<div
+						className="rounded-full bg-primary"
+						style={{ width: 9, height: 9 }}
+					/>
+				),
+				x: 80,
+				y: 40,
+				duration: 4,
+				delay: 1.0,
 				opacity: 0.22,
 			},
 		],
