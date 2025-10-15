@@ -11,6 +11,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Gamepad as GamepadLottie } from "@/components/lottie/gamepad";
 import { Trophy as TrophyLottie } from "@/components/lottie/trophy";
 import { Users as UsersLottie } from "@/components/lottie/users";
+import { AnimatedSection } from "@/components/section";
 import { Button } from "@/components/ui/button";
 
 export function AboutSection(): React.JSX.Element {
@@ -181,7 +182,7 @@ export function AboutSection(): React.JSX.Element {
 	);
 
 	return (
-		<section
+		<AnimatedSection
 			itemID="about"
 			className="relative flex flex-col justify-center items-center text-center gap-10 pt-30"
 		>
@@ -238,6 +239,6 @@ export function AboutSection(): React.JSX.Element {
 			<Button className="flex items-center justify-center gap-2 relative z-10">
 				Junte-se a comunidade <ChevronRight size={50} />
 			</Button>
-		</section>
+		</AnimatedSection>
 	);
 }
