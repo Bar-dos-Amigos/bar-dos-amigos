@@ -1,3 +1,4 @@
+import { AnimatedDiv } from "@/components/section";
 import type { Project } from "./project.type";
 import { ProjectItem } from "./project-item";
 
@@ -30,8 +31,16 @@ export function ProjectList(): React.JSX.Element {
 	];
 	return (
 		<div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-			{data.map((item) => (
-				<ProjectItem key={item.id} data={item} />
+			{data.map((item, index) => (
+				<AnimatedDiv
+					key={item.id}
+					transition={{
+						duration: 0.5 + index * 0.2,
+						delay: index * 0.1,
+					}}
+				>
+					<ProjectItem key={item.id} data={item} />
+				</AnimatedDiv>
 			))}
 		</div>
 	);

@@ -317,9 +317,9 @@ export function AboutSection(): React.JSX.Element {
 			itemID="about"
 			className="relative flex flex-col items-center text-center gap-10 pt-30 min-h-[80dvh]"
 		>
-			{floatingElements.map((el) => (
+			{floatingElements.map((el, index) => (
 				<motion.div
-					key={el.x + el.y}
+					key={el.x + el.y + el.duration + index}
 					className="absolute text-primary/30"
 					style={{
 						top: `${el.y}%`,
@@ -350,7 +350,8 @@ export function AboutSection(): React.JSX.Element {
 					>
 						{items[current].icon}
 					</motion.div>
-
+				</AnimatePresence>
+				<AnimatePresence mode="wait">
 					<motion.h1
 						key={`text-${current}`}
 						{...items[current].textAnimation}

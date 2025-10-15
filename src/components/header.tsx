@@ -3,7 +3,7 @@ import { Folder, Handshake, Home, Instagram, Menu, Twitch } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { TbBrandDiscord } from "react-icons/tb";
-import { ThemeSwitcher } from "./theme-switcher";
+// import { ThemeSwitcher } from "./theme-switcher";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
@@ -117,8 +117,8 @@ export function Header(): React.JSX.Element {
 							/>
 						</a>
 
-						<Separator orientation="vertical" className="h-6 w-px" />
-						<ThemeSwitcher />
+						{/* <Separator orientation="vertical" className="h-6 w-px" /> */}
+						{/* <ThemeSwitcher /> */}
 					</nav>
 				</div>
 			</header>
@@ -192,7 +192,7 @@ export function Header(): React.JSX.Element {
 									</a>
 								</Button>
 
-								<ThemeSwitcher label="Trocar tema" />
+								{/* <ThemeSwitcher label="Trocar tema" /> */}
 
 								<div className="text-sm flex flex-wrap items-center justify-center gap-2 w-full">
 									<Button asChild variant="ghost">
