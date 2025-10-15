@@ -61,9 +61,20 @@ export function Footer(): React.JSX.Element {
 						className="rounded-md border border-gray-300 dark:border-gray-700"
 					/>
 				</div> */}
-				<p className="text-gray-700 dark:text-gray-300 text-sm text-center sm:text-left">
-					© 2025 Bar dos Amigos. Todos os direitos reservados.
-				</p>
+				<div className="flex flex-col items-center text-center gap-1 text-sm text-gray-700 dark:text-gray-300">
+					<p>© 2025 Bar dos Amigos. Todos os direitos reservados.</p>
+					<p>
+						Desenvolvido por{" "}
+						<a
+							href="https://jrdan.dev?utm_source=bardosamigos&utm_medium=footer&utm_campaign=credits"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="underline underline-offset-2 hover:text-primary transition-colors"
+						>
+							jrdan.dev
+						</a>
+					</p>
+				</div>
 			</div>
 		</footer>
 	);
