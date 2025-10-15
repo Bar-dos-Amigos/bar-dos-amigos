@@ -5,7 +5,7 @@ export function SponsorsSection(): React.JSX.Element {
 	return (
 		<AnimatedSection
 			itemID="sponsors"
-			className="flex flex-col items-center gap-10 max-w-[1280px] mx-auto w-full"
+			className="flex flex-col items-center gap-10 max-w-[1280px] mx-auto w-full scroll-mt-22"
 		>
 			<header className="w-full text-center">
 				<h2 className="text-3xl font-bold">Parceiros do Bar</h2>
