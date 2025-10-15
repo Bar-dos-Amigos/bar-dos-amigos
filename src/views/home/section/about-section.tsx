@@ -368,8 +368,15 @@ export function AboutSection(): React.JSX.Element {
 				com outros membros. Esperamos você lá!
 			</p>
 
-			<Button className="flex items-center justify-center gap-2 relative z-10">
-				Junte-se a comunidade <ChevronRight size={50} />
+			<Button asChild>
+				<a
+					href="https://discord.gg/SMd83h5pxJ"
+					target="_blank"
+					rel="noreferrer"
+					className="flex items-center justify-center gap-2 relative z-10"
+				>
+					Junte-se a comunidade <ChevronRight size={50} />
+				</a>
 			</Button>
 		</AnimatedSection>
 	);
