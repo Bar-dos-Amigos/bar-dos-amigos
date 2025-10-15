@@ -40,3 +40,28 @@ export function AnimatedSection({
 		</motion.section>
 	);
 }
+
+export function AnimatedDiv({
+	children,
+	itemID,
+	className,
+	initial = { opacity: 0, y: 50 },
+	animate = { opacity: 1, y: 0 },
+	transition = { duration: 0.6 },
+}: AnimatedSectionProps) {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
+
+	return (
+		<motion.div
+			ref={ref}
+			initial={initial}
+			animate={isInView ? animate : undefined}
+			transition={transition}
+			className={cn("flex flex-col gap-4", className)}
+			id={itemID}
+		>
+			{children}
+		</motion.div>
+	);
+}

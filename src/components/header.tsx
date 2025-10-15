@@ -124,7 +124,7 @@ export function Header(): React.JSX.Element {
 			</header>
 
 			<nav
-				className="fixed md:hidden bottom-0 left-0 w-full h-14 flex justify-between items-center
+				className="bg-background fixed md:hidden bottom-0 left-0 w-full h-14 flex justify-between items-center
                 px-6 z-50
                 border-t border-t/20"
 			>

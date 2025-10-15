@@ -184,7 +184,7 @@ export function AboutSection(): React.JSX.Element {
 	return (
 		<AnimatedSection
 			itemID="about"
-			className="relative flex flex-col justify-center items-center text-center gap-10 pt-30"
+			className="relative flex flex-col items-center text-center gap-10 pt-30 min-h-[80dvh]"
 		>
 			{floatingElements.map((el) => (
 				<motion.div
