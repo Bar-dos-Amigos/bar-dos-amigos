@@ -1,5 +1,6 @@
 import type { QueryClient } from "@tanstack/react-query";
 import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
+import { AdsenseScript } from "@/components/ads/adsense-script";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 
@@ -10,6 +11,7 @@ interface MyRouterContext {
 export const Route = createRootRouteWithContext<MyRouterContext>()({
 	component: () => (
 		<>
+			<AdsenseScript />
 			<Header />
 			<main className="mx-auto px-4 py-2 w-full flex-1 my-12">
 				<Outlet />

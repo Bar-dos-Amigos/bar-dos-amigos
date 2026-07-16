@@ -9,7 +9,9 @@ export function ProjectsSection(): React.JSX.Element {
 			className="flex flex-col items-center gap-10 max-w-[1280px] mx-auto scroll-mt-22"
 		>
 			<header className="w-full text-center">
-				<h2 className="text-3xl font-bold">Projetos em andamento</h2>
+				<h2 className="text-2xl font-bold text-balance sm:text-3xl">
+					Projetos em andamento
+				</h2>
 				<Separator orientation="horizontal" className="h-6 w-px" />
 				<p>
 					Todos os projetos abaixos estão em desenvolvimento e abertos a apoio

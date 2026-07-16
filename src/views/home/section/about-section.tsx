@@ -357,7 +357,7 @@ export function AboutSection(): React.JSX.Element {
 						key={`text-${current}`}
 						{...items[current].textAnimation}
 						transition={{ duration: 0.7 }}
-						className="text-5xl font-bold "
+						className="max-w-full px-2 text-4xl font-bold text-balance sm:text-5xl"
 					>
 						{items[current].text}
 					</motion.h1>

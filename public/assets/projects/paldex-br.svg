@@ -1,0 +1,14 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+	<title id="title">Paldex Brasil</title>
+	<desc id="desc">Capa neutra do projeto Paldex Brasil nas cores do Bar dos Amigos.</desc>
+	<rect width="800" height="450" rx="12" fill="#0f1424"/>
+	<rect x="28" y="28" width="744" height="394" rx="10" fill="#1c243b" stroke="#2b324a" stroke-width="4"/>
+	<circle cx="146" cy="118" r="34" fill="#f8bf35" fill-opacity=".2"/>
+	<circle cx="648" cy="338" r="46" fill="#ed7236" fill-opacity=".16"/>
+	<circle cx="688" cy="92" r="8" fill="#f8bf35"/>
+	<circle cx="104" cy="346" r="10" fill="#f8bf35" fill-opacity=".8"/>
+	<path d="M212 145h376c22 0 40 18 40 40v80c0 22-18 40-40 40H212c-22 0-40-18-40-40v-80c0-22 18-40 40-40Z" fill="#0f1424" stroke="#f8bf35" stroke-width="4"/>
+	<text x="400" y="218" text-anchor="middle" fill="#f8bf35" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="800" letter-spacing="0">PALDEX</text>
+	<text x="400" y="268" text-anchor="middle" fill="#fefefe" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="0">BRASIL</text>
+	<path d="M282 334h236" stroke="#f8bf35" stroke-width="6" stroke-linecap="round"/>
+</svg>
